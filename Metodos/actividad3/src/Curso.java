@@ -42,8 +42,10 @@ public class Curso {
     public String toString() {
         return "Curso{" +
                 "Curso='" + nombre + '\'' +
-                ", Cantidad de alumnos=" + listaDeEstudiantes.size() +
                 ", Profesor='" + profesor + '\'' +
+                ", Cantidad de alumnos=" + listaDeEstudiantes.size() +
+                ", \nAlumnos ='" + listaDeEstudiantes + '\'' +
                 "}\n";
     }
 }
+
