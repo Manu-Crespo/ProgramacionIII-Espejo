@@ -48,15 +48,10 @@ public class Producto {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null || this.getClass() != obj.getClass()) {
-            return false;
-        }
-        Producto otroProducto = (Producto) obj;
-        return this.codigo.equals(otroProducto.codigo);
+    public boolean equals(Object o) {
+        if (!(o instanceof Producto producto)) return false;
+        return Objects.equals(codigo, producto.codigo);
     }
 
 }
+
