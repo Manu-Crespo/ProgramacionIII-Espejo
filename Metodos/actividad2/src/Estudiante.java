@@ -20,8 +20,8 @@ public class Estudiante extends Persona{
 
     @Override
     public String toString() {
-        return "Estudiante{ Nombre= " + super.getNombre() +
-                ", Edad= " + super.getEdad() +
+        return "Estudiante{ Nombre= " + super.toString() +
                 ", Carrera=" + carrera + "}\n";
     }
 }
+
